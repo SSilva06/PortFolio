@@ -1,4 +1,4 @@
-head{
+html{
     scroll-behavior: smooth;
 }
 
@@ -10,7 +10,6 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -33,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .section-padding
 {
-    padding: 60px 0px;
+    padding: 80px 0px;
 }
 #loader {
   position: absolute;
@@ -81,21 +80,57 @@ h1, h2, h3, h4, h5, h6{
   to{ bottom:0; opacity:1 }
 }
 
+@keyframes banner{
+	0%{
+		background-image: url('../img/banner-1.jpg');
+	}
+	25%{
+		background-image: url('../img/banner-1.jpg');
+	}
+
+
+	26%{
+		background-image: url('../img/banner-2.jpg');
+	}
+	50%{
+		background-image: url('../img/banner-2.jpg');
+	}
+
+
+	51%{
+		background-image: url('../img/banner-3.jpg');
+	}
+	75%{
+		background-image: url('../img/banner-3.jpg');
+	}
+
+	76%{
+		background-image: url('../img/banner-4.jpg');
+	}
+	100%{
+		background-image: url('../img/banner-4.jpg');
+	}
+
+}
+
 /***********************************
 ************************************
-HEADER 
+HEADER
 ************************************
 ***********************************/
 .header{
-    background: url('../img/bg-banner02.jpg') no-repeat fixed;
+	transition: all .2s ease-out;
+	background-image: url('../img/banner-1.jpg') fixed;
+	animation: banner 28s infinite linear;
     background-size: cover;
     min-height: 650px;
     position: relative;
+    height: 100vh;
 }
 .bg-color
 {
     background-color: rgba(0, 0, 0, 0.5);
-    min-height: 650px;
+    min-height: 653px;
 }
 #main-header
 {
@@ -103,7 +138,7 @@ HEADER
 .navbar-default {
     background-color: transparent;
     border:0px;
-    padding: 20px 0; 
+    padding: 20px 0;
     transition: all 0.3s;
 }
 
