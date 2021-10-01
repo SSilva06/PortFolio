@@ -28,3 +28,11 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4{
     opacity: 0.4;
     z-index: -1;
 }
+
+.text-underline-hover {
+    text-decoration: none;
+}
+
+.text-underline-hover:hover {
+    text-decoration: underline;
+}
