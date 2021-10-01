@@ -134,13 +134,7 @@ HEADER
     z-index: -1;
 }
 
-.bg-color
-{
-    min-height: 100vh;
-}
-
 .navbar-default {
-    background-color: transparent;
     border:0px;
     padding: 20px 0;
     transition: all 0.3s;
