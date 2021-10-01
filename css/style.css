@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
 }
@@ -5,11 +6,12 @@ html{
 body {
 	line-height: 1.4;
 	font-family: 'Roboto', sans-serif;
-    color: #67696c;
+    color: rgb(180, 180, 180);
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.5px;
     overflow-x: hidden;
+    background-color: rgb(26, 26, 26);
 }
 ol, ul {
 	list-style: none;
@@ -119,7 +121,7 @@ HEADER
 ************************************
 ***********************************/
 .header{
-	transition: all .2s ease-out;
+	transition: all .2s ease;
 	background-image: url('../img/banner-1.jpg') fixed;
 	animation: banner 28s infinite linear;
     background-size: cover;
@@ -132,9 +134,7 @@ HEADER
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 100vh;
 }
-#main-header
-{
-}
+
 .navbar-default {
     background-color: transparent;
     border:0px;
@@ -194,7 +194,7 @@ HEADER
 }
 .banner-info
 {
-    padding-top: 140px;
+    padding-top: 240px;
     color: #fff;
 }
 .bnr-title, .bnr-sub-title
@@ -203,16 +203,18 @@ HEADER
 }
 h1.bnr-title
 {
-    font-size: 18px;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 h2.bnr-sub-title
 {
-    font-size: 45px;
+    font-size: 65px;
     text-transform: uppercase;
-    padding: 20px 0px;
+    padding: 0px;
     font-weight: 700;
+    margin-top: -10px;
+    margin-bottom: -6px;
 }
 .bnr-para
 {
@@ -463,71 +465,7 @@ ul.service-list li i
     -moz-transform:rotateY(0);
     transform:rotateY(0)
 }
-/***********************************
-************************************
-TESTIMONIAL
-************************************
-***********************************/
-#testimonial
-{
-    background: url('../img/bg.jpg') no-repeat;
-    background-size: cover;
-    min-height: 390px;
-}
-.bg-testicolor{
-    background-color: RGBA(73, 84, 105, 0.61);
-    min-height: 390px;
-}
-.white
-{
-    color: #fff !important;
-}
-.testimonial-item ul li blockquote {
-    font-size: 18px;
-    line-height: 32px;
-    color: #fff;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px #333;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    margin: 20px 0;
-    padding: 0 80px;
-    position: relative;
-    border: 0;
-}
-.testimonial-item ul li  small {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-    text-shadow: 1px 1px 2px #333;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-}
-.bx-viewport
-{
-    height: 235px !important;
-    background-color: transparent !important;
-    border: 0px none !important;
-    box-shadow: none !important;
-}
-.testimonial-item ul li blockquote::before {
-    content: '“';
-    left: 30px;
-}
-.testimonial-item ul li blockquote::before, .testimonial-item ul li blockquote::after {
-    position: absolute;
-    font-weight: 300;
-    font-size: 3em;
-    font-family: Georgia, serif;
-    color: #ccc;
-    top: 62%;
-}
-.testimonial-item ul li blockquote::after {
-    content: '”';
-    right: 30px;
-}
+
 /***********************************
 ************************************
 Blog
@@ -587,119 +525,7 @@ Blog
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
-/***********************************
-************************************
-contact
-************************************
-***********************************/
-#contact
-{
-    background-color: rgb(73, 84, 105);
-}
-.btn-submit, .btn-submit:hover, .btn-submit:focus
-{
-    background-color: transparent;
-    border-radius: 60px;
-    color: #be9e21;
-    font-weight: 400;
-    border: 1px solid #be9e21;
-    font-size: 14px;
-    padding: 6px 20px;
-}
-.form-control
-{
-    background-color: transparent;
-    border-radius: 0px;
-    color: #be9e21 !important;
-    border-color: #be9e21;
-}
-.form-control:focus {
-    border-color: #be9e21;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-}
-.contact-form input.form-control{
-    color: #fff;
-}
 
-.validation {
-    color: red;
-    display:none;
-    margin: 0 0 20px;
-    font-weight:400;
-    font-size:13px;
-}
-
-#sendmessage {
-    color: green;
-    border:1px solid green;
-    display:none;
-    text-align:center;
-    padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-#errormessage {
-    color: red;
-    display:none;
-    border:1px solid red;
-    text-align:center;
-    padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-#sendmessage.show, #errormessage.show, .show {
-    display:block;
-}
-
-.loction-info p
-{
-    margin-bottom: 25px;
-}
-.loction-info p i
-{
-    color: #be9e21;
-}
-/***********************************
-************************************
-contact
-************************************
-***********************************/
-#footer
-{
-    padding: 20px 0px;
-}
-.scrollToTop {
-    position: fixed;
-    bottom: 12px;
-    right: 12px;
-    width: 42px;
-    height: 42px;
-    color: #ffffff;
-    background: #be9e21;
-    font-size: 14px;
-    line-height: 42px;
-    text-align: center;
-    z-index: 100;
-    cursor: pointer;
-    display: none;
-}
-.white-bg
-{
-    background-color: #fff;
-}
-#footer a{
-    color: #be9e21;
-    font-weight: 400;
-}
-/***********************************
-************************************
-Responsive media queries
-************************************
-***********************************/
 /***********************************
 ************************************
 cta
@@ -774,7 +600,7 @@ body{
     font-size: 18px;
 }
 .title, .service-title {
-    font-size: 28px;
+    font-size: 58px;
 }
 .sub-title {
     font-size: 15px;
@@ -809,30 +635,28 @@ body{
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.html5{
-    padding: 25px 25px;
+.img-responsive{
+    padding: 25px;
 }
 
-.js{
-    padding: 25px;
+footer{
+    text-align: center;
+}
+
+footer ul{
+    list-style-type: none ;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+footer a:hover{
+    color: rgb(180, 180, 180);
 }
