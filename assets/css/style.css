@@ -5,10 +5,8 @@ html{
 }
 
 body {
-    color: #f4f4f4;
 	font-family: 'Roboto', sans-serif;
     background-color: rgb(20, 20, 20);
-    text-shadow: 0 0 5px rgb(100, 100, 100);
 }
 
 h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4{
@@ -42,15 +40,9 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4{
     text-decoration: none;
 }
 
-.text-underline-hover:hover {
 
-}
 
 .header li{
     margin: 6px;
 }
 
-footer{
-    background-color: rgb(31, 31, 31);
-
-}
